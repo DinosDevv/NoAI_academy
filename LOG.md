@@ -1,1 +1,2 @@
-.
+DAY 01:
+  - Kicked off the 1st project, learned quite a few about grid vs flexbox in css, made an ULTRA basic scaffolding of how the portfolio is going to look, looking forward into adding mobile responsiveness soon.
