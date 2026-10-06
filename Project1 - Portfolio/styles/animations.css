@@ -1,0 +1,20 @@
+@keyframes navAnim {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes backgroundAnim {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: black;
+  }
+
+}
+
+@keyframes textAnim {
+  from { color: black; }
+  to { color: white; }
+}
+

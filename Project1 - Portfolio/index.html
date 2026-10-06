@@ -4,47 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DinosDevv | FullStack Developer</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/animations.css">
 </head>
-<body>
-  <div class="container">
-    <header>
-      <nav>
-        <div class="left">
-          <a href="#">DinosDevv</a>
-        </div>
-        <div class="right">
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#skillsntech">Skills & Technologies</a>
-          <a href="#about">About Me</a>
-          <a href="#">🌙</a> <!-- ☀️ -->
-        </div>
-      </nav>
-    </header>
-    <div class="content">
-      <div class="main">
-  
+<body id="body">
+  <header>
+    <nav>
+      <div id="l" class="left">
+        <a class="dinos" href="#">DinosDevv</a>
       </div>
-      <div id="projects" class="section">
-        <h1>Projects</h1>
+      <button onclick="toggle()" class="burger_menu_btn">☰</button>
+      <div id="r" class="right">
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skillsntech">Skills & Technologies</a>
+        <a href="#about">About Me</a>
+        <a href="#">🌙</a> <!-- ☀️ -->
       </div>
-      <div id="experience" class="section">
-        <h1>Experience</h1>
-      </div>
-      <div id="skillsntech" class="section">
-        <h1>Skills & Technologies</h1>
-      </div>
-      <div id="about" class="section">
-        <h1>About Me</h1>
-      </div>
+    </nav>
+  </header>
+  <div class="main">
+    <img onclick="magic()" src="pfp.png" alt="Konstantinos Bourdakos">
+    <h1>Konstantinos N. Bourdakos</h1>
+    <p>FullStack Developer | Cloud Engineer | Computer Engineering Student</p>
+  </div>
+  <div class="content">
+    <div id="projects" class="section">
+      <h1>Projects</h1>
+    </div>
+    <div id="experience" class="section">
+      <h1>Experience</h1>
+      <p>Throughout my career as a hobbyist full-stack developer, I've created several projects that highlight my web expertise. I've also worked as a secretary at a large (200+ Client) business, where I organized my team and provided digital solutions to every day problems. At the same time, I improved my communication and customer handling skills, as it was the main responsibility of the job.</p>
+    </div>
+    <div id="skillsntech" class="section">
+      <h1>Skills & Technologies</h1>
+      <p>JavaScript/Typescript and the React framework for dynamic and scalable front-end applications. Node.js, express and PostgreSQL databases (supabase and more...) for the backend, git and GitHub for controlling the versions of my applications. The basics of Linux and its terminal, the ability to navigate and work with the operating system.</p>
+    </div>
+    <div id="about" class="section">
+      <h1>About Me</h1>
+      <p>Informatics & Computer engineering student at University of West Attica (Athens, Greece), writing code since '17 (at the age of 10). Social, funny, communicative, empathetic, happy to help and grow, always ready to take new challenges and torture myself (that's a joke)</p>
     </div>
     <footer>
       <div class="socials">
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
+        <h1>Eager to find me?</h1>
+        <a href="https://www.linkedin.com/in/konstantinos-bourdakos-a7847243b/">LinkedIn</a>
+        <a href="https://github.com/DinosDevv">GitHub</a>
+        <p>DinosDevv ®, Konstantinos Bourdakos</p>
       </div>
     </footer>
   </div>
-</body>
+  <script src="index.js"></script>
+  </body>
 </html>
