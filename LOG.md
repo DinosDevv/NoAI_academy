@@ -3,4 +3,8 @@ DAY 01:
 
 DAY 02:
   - Continued progressing on the 1st project, I had the idea of making a very plain, no-css site that upon clicking on the profile picture, changes into a very fascinating, modern, techy vibe (it's probably gonna take more time than I initially anticipated)
+    - For that, I used JS, I am not sure if that's cheating or not!
   - Started working on the device responsiveness, although, I am nowhere close to making something actually useable
+  (DAY 02.5):
+    - I actually added some mobile responsiveness, it works kind of better. I have an issue creating a sticky navbar, but I might scrap the idea completely, so it's fine.
+    - Still figuring out how I want the animation to turn out, and frankly I think my css code is kind of spaghetti

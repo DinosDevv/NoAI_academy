@@ -1,6 +1,7 @@
 @keyframes navAnim {
   from { opacity: 0; }
-  to { opacity: 1; }
+  to { opacity: 1; position: sticky; overflow: hidden;
+  top: 0; }
 }
 
 @keyframes backgroundAnim {
@@ -8,7 +9,8 @@
     background-color: white;
   }
   to {
-    background-color: black;
+    background-color: #000000;
+
   }
 
 }
@@ -18,3 +20,12 @@
   to { color: white; }
 }
 
+@keyframes pfpAnim {
+  from { width: 200px; opacity: 1; }
+  to { width: 0px; opacity: 0; }
+}
+
+@keyframes sectionAnim {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

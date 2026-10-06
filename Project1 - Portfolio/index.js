@@ -12,17 +12,32 @@ function toggle () {
   
 
 }
+window.onload = function () {
+  magic()
+}
 
 function magic() {
   const body = document.getElementById('body')
   const headers = document.querySelector('h1')
   const paragraphs = document.querySelector('p')
   const nav = document.querySelector('nav')
+  const pfp = document.querySelector('.main img')
+  const content = document.querySelector('.content')
+
+  // Animations
 
   body.style.animation = "backgroundAnim 2s forwards"
   headers.style.animation = "textAnim 2s forwards"
   paragraphs.style.animation = "textAnim 2s forwards"
-  body.style.fontFamily = "sans-serif"
   nav.style.animation = "navAnim 2s forwards"
+  pfp.style.animation = "pfpAnim 2s forwards"
+  content.style.animation = "sectionAnim 2s forwards"
+
+  // Other Style changes
+
+  body.style.fontFamily = "sans-serif"
+  
+  // Debugging
+
   console.log("Done")
 }
