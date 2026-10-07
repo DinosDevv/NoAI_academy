@@ -8,3 +8,6 @@ DAY 02:
   (DAY 02.5):
     - I actually added some mobile responsiveness, it works kind of better. I have an issue creating a sticky navbar, but I might scrap the idea completely, so it's fine.
     - Still figuring out how I want the animation to turn out, and frankly I think my css code is kind of spaghetti
+
+DAY 03:
+  - Completely changed direction for the UI/UX and design of the portfolio, the vision of flashy animations is still the same, but I'm thinking of a more always-animated approach. I still struggle with mobile responsiveness and I realized that I hate writing CSS
