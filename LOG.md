@@ -15,3 +15,4 @@ DAY 03:
 DAY 04:
   - I finally have something that I like. I made a lot of changes regarding the mobile responsiveness component of the website. 
   - I'm thinking of even hosting the site as my actual portfolio/CV. I'm thinking about it!
+  - I took some assistance from an LLM to make the color of the font more readable because there was a moment in the animation where font color and background color were the same, making the text unreadable
