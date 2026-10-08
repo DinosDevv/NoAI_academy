@@ -6,14 +6,17 @@
   <title>DinosDevv | FullStack Developer</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="styles/animations.css">
+  <link rel="stylesheet" href="styles/mobile-responsiveness.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body id="body">
+<body>
   <header>
     <nav>
       <div id="l" class="left">
-        <a class="dinos" href="#">DinosDevv</a>
+        <a class="dinos" href="#">&lta href="/home"&gtDinosDevv&lt/a&gt</a>
       </div>
-      <button onclick="toggle()" class="burger_menu_btn">☰</button>
       <div id="r" class="right">
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
@@ -23,64 +26,96 @@
     </nav>
   </header>
   <div class="main">
-    <img onclick="magic()" src="public/pfp.png" alt="Konstantinos Bourdakos">
+    <img src="public/pfp.png" alt="Konstantinos Bourdakos">
     <h1>Konstantinos N. Bourdakos</h1>
     <p>FullStack Developer | Cloud Engineer | Computer Engineering Student</p>
   </div>
   <div class="content">
-    <div class="projects">
-      <h1>Projects</h1>
+    <div id="projects" class="projects">
+      <h1>&lth1&gtProjects&lt/h1&gt</h1>
       <div class="project_container">
         <div class="project_card">
-          <h1>Project Title</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur quae adipisci quo exercitationem, iusto fugit reiciendis sit rem aperiam amet voluptates dicta suscipit sed libero quod dolorum vitae, atque veniam!</p>
+          <h1>Nona PD</h1>
+          <img src="public/nona-pd.png" alt="Nona Project dashboard">
+          <h2>Project Dashboard for small dev teams</h2>
+          <p>Technologies used: React, Typescript, Supabase <a href="">Check it here.</a></p>
         </div>
         <div class="project_card">
-          <h1>Project Title</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur quae adipisci quo exercitationem, iusto fugit reiciendis sit rem aperiam amet voluptates dicta suscipit sed libero quod dolorum vitae, atque veniam!</p>
+          <h1>HelpNONA</h1>
+          <img src="public/HelpNONA.png" alt="Help Nona">
+          <h2>A "digital grandkid", a helper designed to assist the elderly when navigating modern technology</h2>
+          <p>Technologies used: React Native, Typescript, Express.js <a href="">Check it here.</a></p>
         </div>
         <div class="project_card">
-          <h1>Project Title</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur quae adipisci quo exercitationem, iusto fugit reiciendis sit rem aperiam amet voluptates dicta suscipit sed libero quod dolorum vitae, atque veniam!</p>
+          <h1>No AI academy</h1>
+          <img src="public/noai_academy.png" alt="No AI coding academy">
+          <h2>A project that promotes the engineering of software without the assistantce of LLMs with one goal. Keep programmers warmed up at all times!</h2>
+          <p>No technologies where used <a href="">Download it here.</a></p>
         </div>
       </div>
 
     </div>
     <div id="experience" class="section">
-      <h1>Experience</h1>
-      <p>Throughout my career as a hobbyist full-stack developer, I've created several projects that highlight my web expertise. I've also worked as a secretary at a large (200+ Client) business, where I organized my team and provided digital solutions to every day problems. At the same time, I improved my communication and customer handling skills, as it was the main responsibility of the job.</p>
+      <h1>&lth1&gtExperience&lt/h1&gt</h1>
+      <p>&ltp&gtThroughout my time as a hobbyist full-stack developer, I've created several projects that highlight my web expertise. I've also worked as a secretary at a large (200+ Client) business, where I organized my team and provided digital solutions to every day problems. At the same time, I improved my communication and customer handling skills, as it was the main responsibility of the job.&lt/p&gt</p>
     </div>
     <div id="skillsntech" class="section">
-      <h1>Skills & Technologies</h1>
-      <p>JavaScript/Typescript and the React framework for dynamic and scalable front-end applications. Node.js, express and PostgreSQL databases (supabase and more...) for the backend, git and GitHub for controlling the versions of my applications. The basics of Linux and its terminal, the ability to navigate and work with the operating system.</p>
+      <h1>&lth1&gtSkills & Technology&lt/h1&gt</h1>
+      <p>&ltp&gtJavaScript/Typescript and the React framework for dynamic and scalable front-end applications. Node.js, express and PostgreSQL databases (supabase and more...) for the backend, git and GitHub for controlling the versions of my applications. The basics of Linux and its terminal, the ability to navigate and work with the operating system.&lt/p&gt</p>
+      <div class="technologies">
+        <div class="icons">
+          <img src="public/icons/javascript.jpg" alt="javascript">
+        </div>
+        <div class="icons">
+          <img src="public/icons/typescript.jpg" alt="typescript">
+        </div>
+        <div class="icons">
+          <img src="public/icons/react.png" alt="react javascript">
+        </div>
+        <div class="icons">
+          <img src="public/icons/git.png" alt="git version control">
+        </div>
+        <div class="icons">
+          <img src="public/icons/github.png" alt="github">
+        </div>
+        <div class="icons">
+          <img src="public/icons/node.png" alt="node javascript framework">
+        </div>
+        <div class="icons">
+          <img src="public/icons/postgre.png" alt="postgre relational database">
+        </div>
+        <div class="icons">
+          <img src="public/icons/linux.png" alt="linux operating system">
+        </div>
+
+      </div>
     </div>
     <div id="about" class="section">
-      <h1>About Me</h1>
-      <p>Informatics & Computer engineering student at University of West Attica (Athens, Greece), writing code since '17 (at the age of 10). Social, funny, communicative, empathetic, happy to help and grow, always ready to take new challenges and torture myself (that's a joke)</p>
+      <h1>&lth1&gtAbout Me&lt/h1&gt</h1>
+      <p>&ltp&gtHey everyone! My name is Konstantinos Bourdakos (DinosDevv) and I'm a computer engineering student in Athens, Greece. I have been passionate about computers ever since I can remember my self. The first line of code, I ever wrote, was when I was 10 years old, when I had the dream to recreate the game Minecraft so I could add all the features I wanted. The moment I saw the 'Hello World' message on the screen was the moment that my fate to be a Tech Guy was sealed. Ever since, I've been on and off quite a few times, exploring other hobbies too that would challenge me as much (Yeah, I love challenges!). Fast forward to today, I'm learning FullStack Development, Cloud engineering and infrastructure with the dream to provide solutions to real-world problems.&lt/p&gt</p>
     </div>
     <footer>
       <div class="socials">
         <div class="socialIcons">
-          <div class="socialIcn">
+          <div class="icons">
             <a href="https://www.linkedin.com/in/konstantinos-bourdakos-a7847243b/">
-              <img src="public/linkedin.png" alt="">
+              <img src="public/icons/linkedin.png" alt="linkedin">
             </a>
             </div>
-            <div class="socialIcn">
+            <div class="icons">
               <a href="https://github.com/DinosDevv">
-                <img src="public/github.png" alt="">
+                <img src="public/icons/github.png" alt="github">
               </a>
             </div>
-            <div class="socialIcn">
-              <a href="https://mailto:bourdakoskonstantinos@gmail.com">
-                <img src="public/email.png" alt="">
+            <div class="icons">
+              <a href="mailto:bourdakoskonstantinos@gmail.com">
+                <img src="public/icons/email.png" alt="email">
               </a>
             </div>
         </div>
-        <p>DinosDevv ® | Konstantinos Bourdakos | Co-Founder of TeamNona</p>
+        <p>DinosDevv © | Konstantinos Bourdakos | Co-Founder of TeamNona</p>
       </div>
     </footer>
   </div>
-  <script src="index.js"></script>
   </body>
 </html>

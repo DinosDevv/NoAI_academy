@@ -11,3 +11,7 @@ DAY 02:
 
 DAY 03:
   - Completely changed direction for the UI/UX and design of the portfolio, the vision of flashy animations is still the same, but I'm thinking of a more always-animated approach. I still struggle with mobile responsiveness and I realized that I hate writing CSS
+
+DAY 04:
+  - I finally have something that I like. I made a lot of changes regarding the mobile responsiveness component of the website. 
+  - I'm thinking of even hosting the site as my actual portfolio/CV. I'm thinking about it!

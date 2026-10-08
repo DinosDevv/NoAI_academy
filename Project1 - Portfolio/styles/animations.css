@@ -1,0 +1,44 @@
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+      color: black;
+  }
+  50% {
+      background-position: 100% 50%;
+      color: white;
+  }
+  100% {
+      background-position: 0% 50%;
+      color: black;
+  }
+}
+@keyframes negativeGradient {
+  0% {
+    background-color: black;
+    color: white;
+  }
+  50% {
+    background-color: white;
+    color: black;
+  }
+  100% {
+    background-color: black;
+    color: white;
+  }
+}
+
+@keyframes mobileBG {
+  0% {
+    background-color: white;
+    color: black;
+  }
+  50% {
+    background-color: black;
+    color: white;
+  }
+  100% {
+    background-color: white;
+    color: black;
+  }
+}
