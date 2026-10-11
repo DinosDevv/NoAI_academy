@@ -4,6 +4,7 @@
   width: 75px;
   height: 75px;
 
+
   color: white;
   display: flex;
   align-items: center;
@@ -25,4 +26,37 @@ body{
   align-items: center;
   display: grid;
   grid-template-columns: 75px 75px 75px 75px 75px;
+  padding: 10vw;
+  position: absolute;
+  z-index: 999;
+
+}
+@keyframes cardFlip {
+  0% {
+    height: 75px;
+    font-size: 24px;
+  }
+  50% {
+    height: 0px;
+    font-size: 0px;
+  }
+  100% {
+    font-size: 24px;
+    height: 75px;
+  }
+}
+@keyframes typing {
+  0% {
+    width: 75px;
+    height: 75px;
+  }
+  50% {
+    width: 100px;
+    height: 100px;
+  }
+  100% {
+    width: 75px;
+    height: 75px;
+  }
+
 }

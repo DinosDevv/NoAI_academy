@@ -20,3 +20,15 @@ DAY 04:
 
 DAY 05:
   - I started the second project (Wordle clone with Typescript, HTML, CSS), so far it seems very easy, didn't encounter many problems except maybe the fact that I don't know when to use types in typescript and how
+
+DAY 06:
+  - I added most of the functionality to the game.
+  - The way it works is:
+    - 30 (rows = 6 * cols = 5) cells are generated and added to an array
+    - Typing works through an index that points to an item in the cell array (Typing a valid character -> index + 1, Backspace -> index - 1)
+    - I restricted being able to edit previous rows' values by disallowing further character deletion when index is pointing to the first column
+    - I also prevent the user from typing to the next row unless "Enter" is pressed. Then:
+      - The validity of the word is checked ('ASDFG' is not a valid word, 'APPLE'/'HELLO' are.)
+      - The program checks whether letters exist and if so if they are at the correct position or not, paints the cells accordingly
+    - Only then, the user can make another guess on the next row
+     
