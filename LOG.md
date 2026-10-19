@@ -31,4 +31,9 @@ DAY 06:
       - The validity of the word is checked ('ASDFG' is not a valid word, 'APPLE'/'HELLO' are.)
       - The program checks whether letters exist and if so if they are at the correct position or not, paints the cells accordingly
     - Only then, the user can make another guess on the next row
-     
+DAY 07:
+  - I left the Wordle project a bit prematurely, out of enthusiasm to go on to the next project
+  - Got started with the devlog CLI
+DAY 08:
+  - Added the Add-Entry feature for the CLI
+  - Had an issue with writing to the json file. The issue: `returned: [object Object]`, `output: {}` (empty). Realized that the fs.readFile() is asynchronous and as a result, the parent readContent() function returned the empty output before the content of the file was read and saved. The temporary `dataToSave[]` array ended up just keeping the current entry, as well as an empty object `{}`. What I did is I re-wrote the function in a synchronous way by using `try/catch`.

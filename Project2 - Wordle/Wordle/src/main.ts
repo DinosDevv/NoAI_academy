@@ -127,7 +127,7 @@ function checkValidity(userGuess: string): boolean {
 function drawCells(index: number, results: string[]) {
   let j = 0
   for(let i = index-5; i < index; i++) {
-    letterContainers[i].style.animation = "cardFlip 1s forwards"
+    letterContainers[i].style.transform = "rotateY(180deg)"
     if(results[j] == 'WP') letterContainers[i].style.backgroundColor = "#B59F3B"
     if(results[j] == 'RP') letterContainers[i].style.backgroundColor = "#538D4E"
     if(results[j] == 'W') letterContainers[i].style.backgroundColor = "#3A3A3C"

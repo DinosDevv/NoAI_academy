@@ -32,17 +32,11 @@ body{
 
 }
 @keyframes cardFlip {
-  0% {
-    height: 75px;
-    font-size: 24px;
+  from {
+    transform: rotateY(0)
   }
-  50% {
-    height: 0px;
-    font-size: 0px;
-  }
-  100% {
-    font-size: 24px;
-    height: 75px;
+  to{
+    transform: rotateY(180)
   }
 }
 @keyframes typing {
