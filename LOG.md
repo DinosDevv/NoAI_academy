@@ -38,5 +38,17 @@ DAY 07:
 
 DAY 08:
   - Added the Add-Entry feature for the CLI
-  - Had an issue with writing to the json file. The issue: `returned: [object Object]`, `output: {}` (empty). Realized that the fs.readFile() is asynchronous and as a result, the parent readContent() function returned the empty output before the content of the file was read and saved. The temporary `dataToSave[]` array ended up just keeping the current entry, as well as an empty object `{}`. What I did is I re-wrote the function in a synchronous way by using `try/catch`.
-  - I read about the levenshtein algorithm to enable "fuzzy string matching". I basically calculate the levenshtein for the search query and all the entry submissions (probably too slow while number of submissions increases) and I add each result to a list `list.push(Levenshtein(entry, searchQuery))`. This looks like this: `[24, 19, 23, 42]` then I iterate through this list (probably also quite slow) and find the smallest number `if(value < min) min = value`, lastly, I return `return list.indexOf(min)`, which is the position of the entry submission that has the least amount of differences of the initial search query.
+  - Had an issue with writing to the json file. The issue: `returned: [object Object]`, `output: {}` (empty). Realized that the `fs.readFile()` is asynchronous and as a result, the parent `readContent()` function returned the empty output before the content of the file was read and saved. The temporary `dataToSave[]` array ended up just keeping the current entry, as well as an empty object `{}`. What I did is I re-wrote the function in a synchronous way by using `try/catch`.
+  - I read about the levenshtein algorithm to enable "fuzzy string matching". I basically calculate the levenshtein for the search query and all the entry submissions (probably too slow while number of submissions increases) and I add each result to a list `list.push(Levenshtein(entry, searchQuery))`. This looks like this: `[24, 19, 23, 42]` then I iterate through this list (probably also quite slow) and find the smallest number `if(value < min) min = value`.Lastly, I return `return list.indexOf(min)`, which is the position of the entry submission that has the least amount of differences of the initial search query.
+
+DAY 09:
+  - Started working on the `list` command. So far it searches through every entry submitted and pushes every one where the tag is matching. If `tags = null` (as a parameter) then `output = listOfEntries` where `listOfEntries` is the content of the json file. After the tag check, I'm thinking of re-iterating through the entries to remove all the submissions that were created before X (`-since X`). I can probably make it into one iteration and check for both but I'm concerned that that would make a lot of cases:
+    - tags: YES, since: YES
+    - tags: YES, since: NO
+    - tags: NO, since: YES
+    - tags: NO, since: NO
+  I was also thinking about whether the list command functionality would change when I made it possible to submit an entry with more than one tag e.g. `add "Hello, World" --tag testTag1, testTag2` but on second thought, we care about finding all entries that INCLUDE the given tag. 
+  - I will approach the `--since` option by implementing this check (when `!since`): `currentDate - entry.date <= since`, if that returns true, then we push the submission to the list. How it works:
+    - I created a `parseSince(since)` function that takes a string as a parameter, in the format '7d', '1h', '3w' (where d: day(s), h: hour(s), w: week(s)). 
+    - The unit is stored as a character `const unit = since.charAt(since.length - 1).toUpperCase()` and the remaining part is stored as a Number. 
+    - Then, the maximum allowed age for a task to be listed is the multiplication: `amount(number) * multiplier(ms)` and that decides whether an entry is listed or not.
