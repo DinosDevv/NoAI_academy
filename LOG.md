@@ -52,3 +52,15 @@ DAY 09:
     - I created a `parseSince(since)` function that takes a string as a parameter, in the format '7d', '1h', '3w' (where d: day(s), h: hour(s), w: week(s)). 
     - The unit is stored as a character `const unit = since.charAt(since.length - 1).toUpperCase()` and the remaining part is stored as a Number. 
     - Then, the maximum allowed age for a task to be listed is the multiplication: `amount(number) * multiplier(ms)` and that decides whether an entry is listed or not.
+
+DAY 10:
+  - Organized the folders so the commands don't live in the `fileHandling.js` file. Created `commands.js`. I also changed the methods' names in the `fileHandling.js` so that they depict better what each method does. For example:
+    - `readContent()` -> `readJSON(PATH)`, previously, the `readContent()` method just returned the contents of the ./localdb.json file as a JavaScript object. Now, the path can be specified so other .json files can be read as well.
+    - `addContent(content)` -> `addEntry(content)` and created a new method to handle appending to the .json file `appendToJSON(PATH, CONTENT)` that returns true/false that depends on whether the action was successful or not.
+    - Changed the `localDb.json` to `entries.json` and created `sessions.json`
+    - Made logging sessions possible, taking a duration and a name parameter
+    - Created `stats.js` file and currently working on it. On second thought, I'm thinking that the `stats.json` file is not needed since the stats are either way calculated every time the user uses the stats command, since they need to be up to date, so it's useless to store it in a file.
+    - I have created 3 methods so far:
+      - `calculateTotalTime()`: reads all sessions and sums the duration of each, then returns the total time.
+      - `topTags()`: iterates through all entry submissions and adds the tags to a tag object. If the entry tag is already in the object from previous iteration, the value is increased, e.g. `testTag: 2`. Then we sort by value and return the new list.
+      - `calculateStreak()`: NOT IMPLEMENTED YET 
