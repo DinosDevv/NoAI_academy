@@ -64,3 +64,9 @@ DAY 10:
       - `calculateTotalTime()`: reads all sessions and sums the duration of each, then returns the total time.
       - `topTags()`: iterates through all entry submissions and adds the tags to a tag object. If the entry tag is already in the object from previous iteration, the value is increased, e.g. `testTag: 2`. Then we sort by value and return the new list.
       - `calculateStreak()`: NOT IMPLEMENTED YET 
+
+DAY 11:
+  - `calculateStreak()`: Fetches all sessions and entries and pushed the date of each to a `dates[]` array. Then, the program iterates through the dates and compares. After each iteration, a temporary variable `previousDate` is updated to the last `date objct`. If for two consecutive submissions, the difference in dates is more than 2 days, the function returns.
+  - I made accessing the tool from everywhere possible. Now you can type `devlog` in your CMD and you are greeted with the starting menu.
+  - I added folder/file checking. If the files don't exist, they get created in the `os.homedir` folder. 
+  - I needed to drop all external libraries so I'm rebuilding the parser myself.
