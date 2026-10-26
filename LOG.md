@@ -70,3 +70,7 @@ DAY 11:
   - I made accessing the tool from everywhere possible. Now you can type `devlog` in your CMD and you are greeted with the starting menu.
   - I added folder/file checking. If the files don't exist, they get created in the `os.homedir` folder. 
   - I needed to drop all external libraries so I'm rebuilding the parser myself.
+
+DAY 12:
+  - Worked a little more on the parser. Created `commandObjects` that basically contain the properties and methods of all commands in order to be checked and validated after the user has typed a command. 
+  - Currently thinking of kicking off the 4th project and pausing the current since I started the whole challenge as a way to improve my web dev skills and I haven't done any actual real web dev get.
