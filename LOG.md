@@ -79,4 +79,8 @@ DAY 13:
   - Started working on the API Explorer app. Scaffolded the app using vite `npm vite create@latest` `TypeScript + React Compiler`
   - I created an API key for the Countries REST API and using the React Router module I created two pages, the main as well as a country information page where the data from the API will be displayed.
   - I implemented dynamic URLs where the route path is `/countryInfo/:countryName` and that fetches all data for that country. 
-  - I tried to make it work with an html input but it failed for now. 
+  - I tried to make it work with an html input but it failed for now.
+
+DAY 14:
+  - I implemented the search feature and you can now type any country in the search bar, hit search and you will be shortly redirected to a country-specific page that displays all related information. 
+  - I faced a problem regarding the type of the fetched object where I couldn't access any properties without VS Code throwing an error because of the type safety feature. For that, I created my own type interface using typescript.
