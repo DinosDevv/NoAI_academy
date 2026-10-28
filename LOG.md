@@ -66,7 +66,7 @@ DAY 10:
       - `calculateStreak()`: NOT IMPLEMENTED YET 
 
 DAY 11:
-  - `calculateStreak()`: Fetches all sessions and entries and pushed the date of each to a `dates[]` array. Then, the program iterates through the dates and compares. After each iteration, a temporary variable `previousDate` is updated to the last `date objct`. If for two consecutive submissions, the difference in dates is more than 2 days, the function returns.
+  - `calculateStreak()`: Fetches all sessions and entries and pushed the date of each to a `dates[]` array. Then, the program iterates through the dates and compares. After each iteration, a temporary variable `previousDate` is updated to the last `date object`. If for two consecutive submissions, the difference in dates is more than 2 days, the function returns.
   - I made accessing the tool from everywhere possible. Now you can type `devlog` in your CMD and you are greeted with the starting menu.
   - I added folder/file checking. If the files don't exist, they get created in the `os.homedir` folder. 
   - I needed to drop all external libraries so I'm rebuilding the parser myself.
@@ -74,3 +74,9 @@ DAY 11:
 DAY 12:
   - Worked a little more on the parser. Created `commandObjects` that basically contain the properties and methods of all commands in order to be checked and validated after the user has typed a command. 
   - Currently thinking of kicking off the 4th project and pausing the current since I started the whole challenge as a way to improve my web dev skills and I haven't done any actual real web dev get.
+
+DAY 13:
+  - Started working on the API Explorer app. Scaffolded the app using vite `npm vite create@latest` `TypeScript + React Compiler`
+  - I created an API key for the Countries REST API and using the React Router module I created two pages, the main as well as a country information page where the data from the API will be displayed.
+  - I implemented dynamic URLs where the route path is `/countryInfo/:countryName` and that fetches all data for that country. 
+  - I tried to make it work with an html input but it failed for now. 
